@@ -57,6 +57,7 @@ export class LoginComponent {
       (res) => {
         if (res) {
           this.router.navigate(['/dashboard']);
+          window.location.reload();
         } else {
           alert('Invalid Credentials');
         }
